@@ -1,0 +1,11 @@
+commit 4516c24abf1c7c939bafe210c36843e49425fa85 (HEAD -> master)
+Author: QWERTY-258 <60897208+QWERTY-258@users.noreply.github.com>
+Date:   Wed Feb 10 22:08:22 2021 +0300
+
+    add status.txt
+
+commit 86015204e6cd0acbbea4f9068f920fdcea9fd32b
+Author: QWERTY-258 <60897208+QWERTY-258@users.noreply.github.com>
+Date:   Wed Feb 10 22:06:14 2021 +0300
+
+    add .gitignore
