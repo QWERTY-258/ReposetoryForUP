@@ -90,14 +90,20 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Author name <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="sort-date">The date</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">The date</a>
+                    <a class="nav-link" href="#" id="sort-author">Author name </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Tags</a>
+                    <a class="nav-link" href="#" id="sort-tags">Tags</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="sort-price">Price</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="sort-add">Add</a>
                 </li>
             </ul>
             <div class="collapse navbar-collapse" id="nextNav">
@@ -108,11 +114,12 @@
                 </form>
             </div>
         </nav>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light mt-3 mb-5">
+        <div class="navbar navbar-expand-lg navbar-light bg-light mt-3 mb-5">
             <section class="text-center mb-4">
-                <a class="nav-link disabled" href="#"></a>
-                <div class="row wow fadeIn">
-                    <div class="col-lg-6 col-md-6 md-4">
+                <div class="row wow fadeIn" id="mainDiv">
+
+                    <div class="col-lg-6 col-md-6 md-4" price-sort="199">
+                        <a class="nav-link disabled" href="#"></a>
                         <div class="card">
                             <div class="view overlay">
                                 <img class="card-img-top" src="https://media-cdn.tripadvisor.com/media/photo-s/19/87/63/c8/tofinis-hotel.jpg" alt="">
@@ -136,12 +143,13 @@
                                         <h6 class="dark-grey-text">The date: 23.01.2019</h6>
                                         <h6 class="dark-grey-text">Tags: #Greece, #Luxury</h6></strong>
                                 </h4>
-                                        <button type="button" class="btn btn-outline-danger"">Like</button>
-                                        <button type="button" class="btn btn-primary">Reserve</button>
+                                <button type="button" class="btn btn-outline-danger">Like</button>
+                                <button type="button" class="btn btn-primary">Reserve</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 md-4">
+                    <div class="col-lg-6 col-md-6 md-4" price-sort="299">
+                        <a class="nav-link disabled" href="#"></a>
                         <div class="card">
                             <div class="view overlay">
                                 <img class="card-img-top" src="https://images.pexels.com/photos/4186560/pexels-photo-4186560.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
@@ -161,19 +169,17 @@
                                 </a>
                                 <h4 class="font-weight-bold">
                                     <a class="nav-link disabled"></a>
-                                    <strong class="red-text">199$ <h5 class="dark-grey-text">сутки</h5><h6 class="dark-grey-text">Author: Tom Simo</h6>
+                                    <strong class="red-text">299$ <h5 class="dark-grey-text">сутки</h5><h6 class="dark-grey-text">Author: Tom Simo</h6>
                                         <h6 class="dark-grey-text">The date: 23.01.2019</h6>
                                         <h6 class="dark-grey-text">Tags: #Greece, #Luxury</h6></strong>
                                 </h4>
-                                <button type="button" class="btn btn-outline-danger"">Like</button>
+                                <button type="button" class="btn btn-outline-danger">Like</button>
                                 <button type="button" class="btn btn-primary">Reserve</button>
                             </div>
                         </div>
                     </div>
-                </div>
-                <a class="nav-link disabled" href="#"></a>
-                <div class="row wow fadeIn">
-                    <div class="col-lg-6 col-md-6 md-4">
+                    <div class="col-lg-6 col-md-6 md-4" price-sort="99">
+                        <a class="nav-link disabled" href="#"></a>
                         <div class="card">
                             <div class="view overlay">
                                 <img class="card-img-top" src="https://images.pexels.com/photos/4825701/pexels-photo-4825701.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
@@ -193,16 +199,17 @@
                                 </a>
                                 <h4 class="font-weight-bold">
                                     <a class="nav-link disabled"></a>
-                                    <strong class="red-text">199$ <h5 class="dark-grey-text">сутки</h5><h6 class="dark-grey-text">Author: Tom Simo</h6>
+                                    <strong class="red-text">99$ <h5 class="dark-grey-text">сутки</h5><h6 class="dark-grey-text">Author: Tom Simo</h6>
                                         <h6 class="dark-grey-text">The date: 23.01.2019</h6>
                                         <h6 class="dark-grey-text">Tags: #Greece, #Luxury</h6></strong>
                                 </h4>
-                                <button type="button" class="btn btn-outline-danger"">Like</button>
+                                <button type="button" class="btn btn-outline-danger">Like</button>
                                 <button type="button" class="btn btn-primary">Reserve</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 md-4">
+                    <div class="col-lg-6 col-md-6 md-4" price-sort="149">
+                        <a class="nav-link disabled" href="#"></a>
                         <div class="card">
                             <div class="view overlay">
                                 <img class="card-img-top" src="https://images.pexels.com/photos/2506988/pexels-photo-2506988.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
@@ -222,19 +229,17 @@
                                 </a>
                                 <h4 class="font-weight-bold">
                                     <a class="nav-link disabled"></a>
-                                    <strong class="red-text">199$ <h5 class="dark-grey-text">сутки</h5><h6 class="dark-grey-text">Author: Tom Simo</h6>
+                                    <strong class="red-text">149$ <h5 class="dark-grey-text">сутки</h5><h6 class="dark-grey-text">Author: Tom Simo</h6>
                                         <h6 class="dark-grey-text">The date: 23.01.2019</h6>
                                         <h6 class="dark-grey-text">Tags: #Greece, #Luxury</h6></strong>
                                 </h4>
-                                <button type="button" class="btn btn-outline-danger"">Like</button>
+                                <button type="button" class="btn btn-outline-danger">Like</button>
                                 <button type="button" class="btn btn-primary">Reserve</button>
                             </div>
                         </div>
                     </div>
-                </div>
-                <a class="nav-link disabled" href="#"></a>
-                <div class="row wow fadeIn">
-                    <div class="col-lg-6 col-md-6 md-4">
+                    <div class="col-lg-6 col-md-6 md-4" price-sort="249">
+                        <a class="nav-link disabled" href="#"></a>
                         <div class="card">
                             <div class="view overlay">
                                 <img class="card-img-top" src="https://images.pexels.com/photos/6532154/pexels-photo-6532154.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
@@ -254,16 +259,17 @@
                                 </a>
                                 <h4 class="font-weight-bold">
                                     <a class="nav-link disabled"></a>
-                                    <strong class="red-text">199$ <h5 class="dark-grey-text">сутки</h5><h6 class="dark-grey-text">Author: Tom Simo</h6>
+                                    <strong class="red-text">249$ <h5 class="dark-grey-text">сутки</h5><h6 class="dark-grey-text">Author: Tom Simo</h6>
                                         <h6 class="dark-grey-text">The date: 23.01.2019</h6>
                                         <h6 class="dark-grey-text">Tags: #Greece, #Luxury</h6></strong>
                                 </h4>
-                                <button type="button" class="btn btn-outline-danger"">Like</button>
+                                <button type="button" class="btn btn-outline-danger">Like</button>
                                 <button type="button" class="btn btn-primary">Reserve</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 md-4">
+                    <div class="col-lg-6 col-md-6 md-4" price-sort="349">
+                        <a class="nav-link disabled" href="#"></a>
                         <div class="card">
                             <div class="view overlay">
                                 <img class="card-img-top" src="https://images.pexels.com/photos/6181222/pexels-photo-6181222.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
@@ -283,19 +289,17 @@
                                 </a>
                                 <h4 class="font-weight-bold">
                                     <a class="nav-link disabled"></a>
-                                    <strong class="red-text">199$ <h5 class="dark-grey-text">сутки</h5><h6 class="dark-grey-text">Author: Tom Simo</h6>
+                                    <strong class="red-text">349$ <h5 class="dark-grey-text">сутки</h5><h6 class="dark-grey-text">Author: Tom Simo</h6>
                                         <h6 class="dark-grey-text">The date: 23.01.2019</h6>
                                         <h6 class="dark-grey-text">Tags: #Greece, #Luxury</h6></strong>
                                 </h4>
-                                <button type="button" class="btn btn-outline-danger"">Like</button>
+                                <button type="button" class="btn btn-outline-danger">Like</button>
                                 <button type="button" class="btn btn-primary">Reserve</button>
                             </div>
                         </div>
                     </div>
-                </div>
-                <a class="nav-link disabled" href="#"></a>
-                <div class="row wow fadeIn">
-                    <div class="col-lg-6 col-md-6 md-4">
+                    <div class="col-lg-6 col-md-6 md-4" price-sort="129">
+                        <a class="nav-link disabled" href="#"></a>
                         <div class="card">
                             <div class="view overlay">
                                 <img class="card-img-top" src="https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
@@ -315,16 +319,17 @@
                                 </a>
                                 <h4 class="font-weight-bold">
                                     <a class="nav-link disabled"></a>
-                                    <strong class="red-text">199$ <h5 class="dark-grey-text">сутки</h5><h6 class="dark-grey-text">Author: Tom Simo</h6>
+                                    <strong class="red-text">129$ <h5 class="dark-grey-text">сутки</h5><h6 class="dark-grey-text">Author: Tom Simo</h6>
                                         <h6 class="dark-grey-text">The date: 23.01.2019</h6>
                                         <h6 class="dark-grey-text">Tags: #Greece, #Luxury</h6></strong>
                                 </h4>
-                                <button type="button" class="btn btn-outline-danger"">Like</button>
+                                <button type="button" class="btn btn-outline-danger">Like</button>
                                 <button type="button" class="btn btn-primary">Reserve</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 md-4">
+                    <div class="col-lg-6 col-md-6 md-4" price-sort="129">
+                        <a class="nav-link disabled" href="#"></a>
                         <div class="card">
                             <div class="view overlay">
                                 <img class="card-img-top" src="https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
@@ -344,19 +349,17 @@
                                 </a>
                                 <h4 class="font-weight-bold">
                                     <a class="nav-link disabled"></a>
-                                    <strong class="red-text">199$ <h5 class="dark-grey-text">сутки</h5><h6 class="dark-grey-text">Author: Tom Simo</h6>
+                                    <strong class="red-text">129$ <h5 class="dark-grey-text">сутки</h5><h6 class="dark-grey-text">Author: Tom Simo</h6>
                                         <h6 class="dark-grey-text">The date: 23.01.2019</h6>
                                         <h6 class="dark-grey-text">Tags: #Greece, #Luxury</h6></strong>
                                 </h4>
-                                <button type="button" class="btn btn-outline-danger"">Like</button>
+                                <button type="button" class="btn btn-outline-danger">Like</button>
                                 <button type="button" class="btn btn-primary">Reserve</button>
                             </div>
                         </div>
                     </div>
-                </div>
-                <a class="nav-link disabled" href="#"></a>
-                <div class="row wow fadeIn">
-                    <div class="col-lg-6 col-md-6 md-4">
+                    <div class="col-lg-6 col-md-6 md-4" price-sort="329">
+                        <a class="nav-link disabled" href="#"></a>
                         <div class="card">
                             <div class="view overlay">
                                 <img class="card-img-top" src="https://images.pexels.com/photos/6127017/pexels-photo-6127017.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500 " alt="">
@@ -376,16 +379,17 @@
                                 </a>
                                 <h4 class="font-weight-bold">
                                     <a class="nav-link disabled"></a>
-                                    <strong class="red-text">199$ <h5 class="dark-grey-text">сутки</h5><h6 class="dark-grey-text">Author: Tom Simo</h6>
+                                    <strong class="red-text">329$ <h5 class="dark-grey-text">сутки</h5><h6 class="dark-grey-text">Author: Tom Simo</h6>
                                         <h6 class="dark-grey-text">The date: 23.01.2019</h6>
                                         <h6 class="dark-grey-text">Tags: #Greece, #Luxury</h6></strong>
                                 </h4>
-                                <button type="button" class="btn btn-outline-danger"">Like</button>
+                                <button type="button" class="btn btn-outline-danger">Like</button>
                                 <button type="button" class="btn btn-primary">Reserve</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 md-4">
+                    <div class="col-lg-6 col-md-6 md-4" price-sort="179">
+                        <a class="nav-link disabled" href="#"></a>
                         <div class="card">
                             <div class="view overlay">
                                 <img class="card-img-top" src="https://images.pexels.com/photos/4566721/pexels-photo-4566721.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
@@ -405,59 +409,59 @@
                                 </a>
                                 <h4 class="font-weight-bold">
                                     <a class="nav-link disabled"></a>
-                                    <strong class="red-text">199$ <h5 class="dark-grey-text">сутки</h5><h6 class="dark-grey-text">Author: Tom Simo</h6>
+                                    <strong class="red-text">179$ <h5 class="dark-grey-text">сутки</h5><h6 class="dark-grey-text">Author: Tom Simo</h6>
                                         <h6 class="dark-grey-text">The date: 23.01.2019</h6>
                                         <h6 class="dark-grey-text">Tags: #Greece, #Luxury</h6></strong>
                                 </h4>
-                                <button type="button" class="btn btn-outline-danger"">Like</button>
+                                <button type="button" class="btn btn-outline-danger">Like</button>
                                 <button type="button" class="btn btn-primary">Reserve</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                </div>
             </section>
-    <nav class="d-flex justify-content-center wow fadeIn">
-        <ul class="pagination pg-blue">
-            <li class="page-item disabled">
-                <a href="" class="page-link" aria-lable="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                </a>
-            </li>
-            <li class="page-item active">
-                <a href="" class="page-link" aria-lable="Previous">
-                    <span aria-hidden="true">1</span>
-                </a>
-            </li>
-            <li class="page-item">
-                <a href="" class="page-link" aria-lable="Previous">
-                    <span aria-hidden="true">2</span>
-                </a>
-            </li>
-            <li class="page-item">
-                <a href="" class="page-link" aria-lable="Previous">
-                    <span aria-hidden="true">3</span>
-                </a>
-            </li>
-            <li class="page-item">
-                <a href="" class="page-link" aria-lable="Previous">
-                    <span aria-hidden="true">4</span>
-                </a>
-            </li>
-            <li class="page-item">
-                <a href="" class="page-link" aria-lable="Previous">
-                    <span aria-hidden="true">5</span>
-                </a>
-            </li>
-            <li class="page-item">
-                <a href="" class="page-link" aria-lable="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    </div>
+        </div>
+        <nav class="d-flex justify-content-center wow fadeIn">
+            <ul class="pagination pg-blue">
+                <li class="page-item disabled">
+                    <a href="" class="page-link" aria-lable="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item active">
+                    <a href="" class="page-link" aria-lable="Previous">
+                        <span aria-hidden="true">1</span>
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a href="" class="page-link" aria-lable="Previous">
+                        <span aria-hidden="true">2</span>
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a href="" class="page-link" aria-lable="Previous">
+                        <span aria-hidden="true">3</span>
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a href="" class="page-link" aria-lable="Previous">
+                        <span aria-hidden="true">4</span>
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a href="" class="page-link" aria-lable="Previous">
+                        <span aria-hidden="true">5</span>
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a href="" class="page-link" aria-lable="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
         </nav>
+    </div>
+    </nav>
 
 </main>
 
@@ -587,24 +591,406 @@
 <script type="text/javascript" src="js/mdb.min.js"></script>
 <!-- Your custom scripts (optional) -->
 <script type="text/javascript">
-    var a = document.getElementById('disc-50');
-    a.onclick = function () {
-        Clipboard_CopyTo("T9TTVSQB");
-        var div = document.getElementById('code-success');
-        div.style.display = 'block';
-        setTimeout(function () {
-            document.getElementById('code-success').style.display = 'none';
-        }, 900);
-    };
 
-    function Clipboard_CopyTo(value) {
-        var tempInput = document.createElement("input");
-        tempInput.value = value;
-        document.body.appendChild(tempInput);
-        tempInput.select();
-        document.execCommand("copy");
-        document.body.removeChild(tempInput);
+    var Posts = [
+        {
+            id:'1',
+            descriprion: 'Тестовый отель',
+            createdAt: '23.01.2021',
+            author: 'Иванов Иван',
+            price: '199',
+            tag: '#Greece',
+            like: 'true',
+            who_liked: 'Tom, Billy, Harry, Jon',
+            picture: 'https://images.pexels.com/photos/6181222/pexels-photo-6181222.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+        },
+        {
+            id:'2',
+            descriprion: 'Тестовый отель2',
+            createdAt: '03.11.2011',
+            author: 'Птеров Петр',
+            price: '299',
+            tag: '#Italy',
+            like: 'false',
+            who_liked: 'Tom, Billy, Harry',
+            picture: 'https://images.pexels.com/photos/6181222/pexels-photo-6181222.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+        },
+        {
+            id:'3',
+            descriprion: 'Тестовый отель3',
+            createdAt: '24.07.2017',
+            author: 'Mr. Snow',
+            price: '99',
+            tag: '#Greece',
+            like: 'false',
+            who_liked: 'Tom, Billy, Harry, Jon, Anna',
+            picture: 'https://images.pexels.com/photos/6181222/pexels-photo-6181222.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+        },
+        {
+            id:'4',
+            descriprion: 'Тестовый отель4',
+            createdAt: '01.04.2020',
+            author: 'Птеров Петр',
+            price: '149',
+            tag: '#Turkey',
+            like: 'false',
+            who_liked: 'Tom, Billy, Harry, Jon, Ivan',
+            picture: 'https://images.pexels.com/photos/6181222/pexels-photo-6181222.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+        },
+        {
+            id:'5',
+            descriprion: 'Тестовый отель5',
+            createdAt: '06.09.2001',
+            author: 'Mr. Snow',
+            price: '249',
+            tag: '#Italy',
+            like: 'false',
+            who_liked: 'Tom, Billy, Harry, Jon, Katrina',
+            picture: 'https://images.pexels.com/photos/6181222/pexels-photo-6181222.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+        },
+        {
+            id:'6',
+            descriprion: 'Тестовый отель6',
+            createdAt: '04.11.2014',
+            author: 'Mr. Yellow',
+            price: '349',
+            tag: '#Turkey',
+            like: 'true',
+            who_liked: 'Tom, Jon, Maria',
+            picture: 'https://images.pexels.com/photos/6181222/pexels-photo-6181222.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+        },
+        {
+            id:'7',
+            descriprion: 'Тестовый отель7',
+            createdAt: '02.01.2016',
+            author: 'Mr. Blue',
+            price: '129',
+            tag: '#Italy',
+            like: 'false',
+            who_liked: 'Tom, Billy, Harry, Jon',
+            picture: 'https://images.pexels.com/photos/6181222/pexels-photo-6181222.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+        },
+        {
+            id:'8',
+            descriprion: 'Тестовый отель8',
+            createdAt: '10.10.2003',
+            author: 'Mr. Snow',
+            price: '129',
+            tag: '#Spain',
+            like: 'false',
+            who_liked: 'Tom, Billy, Harry, Jon',
+            picture: 'https://images.pexels.com/photos/6181222/pexels-photo-6181222.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+        },
+        {
+            id:'9',
+            descriprion: 'Тестовый отель9',
+            createdAt: '07.01.2019',
+            author: 'Mr. Blue',
+            price: '329',
+            tag: '#Turkey',
+            like: 'false',
+            who_liked: 'Tom, Billy, Harry, Jon',
+            picture: 'https://images.pexels.com/photos/6181222/pexels-photo-6181222.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+        },
+        {
+            id:'10',
+            descriprion: 'Тестовый отель10',
+            createdAt: '11.11.2003',
+            author: 'Mr. Snow',
+            price: '179',
+            tag: '#Spain',
+            like: 'true',
+            who_liked: 'Tom, Billy, Harry, Jon',
+            picture: 'https://images.pexels.com/photos/6181222/pexels-photo-6181222.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+        },
+        {
+            id:'11',
+            descriprion: 'Тестовый отель11',
+            createdAt: '22.11.2021',
+            author: 'Иванов Иван',
+            price: '199',
+            tag: '#Italy',
+            like: 'false',
+            who_liked: 'Tom, Billy, Harry, Jon',
+            picture: 'https://images.pexels.com/photos/6181222/pexels-photo-6181222.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+        },
+        {
+            id:'12',
+            descriprion: 'Тестовый отель12',
+            createdAt: '13.01.2011',
+            author: 'Птеров Петр',
+            price: '299',
+            tag: '#Turkey',
+            like: 'false',
+            who_liked: 'Tom, Billy, Harry, Jon',
+            picture: 'https://images.pexels.com/photos/6181222/pexels-photo-6181222.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+        },
+        {
+            id:'13',
+            descriprion: 'Тестовый отель13',
+            createdAt: '04.07.2012',
+            author: 'Mr. Snow',
+            price: '99',
+            tag: '#Greece',
+            like: 'false',
+            who_liked: 'Tom, Billy, Harry, Jon',
+            picture: 'https://images.pexels.com/photos/6181222/pexels-photo-6181222.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+        },
+        {
+            id:'14',
+            descriprion: 'Тестовый отель14',
+            createdAt: '01.01.2010',
+            author: 'Птеров Петр',
+            price: '159',
+            tag: '#Italy',
+            like: 'false',
+            who_liked: 'Tom, Billy, Harry, Jon',
+            picture: 'https://images.pexels.com/photos/6181222/pexels-photo-6181222.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+        },
+        {
+            id:'15',
+            descriprion: 'Тестовый отель15',
+            createdAt: '16.09.2001',
+            author: 'Mr. Snow',
+            price: '249',
+            tag: '#Turkey',
+            like: 'false',
+            who_liked: 'Tom, Billy, Harry, Jon',
+            picture: 'https://images.pexels.com/photos/6181222/pexels-photo-6181222.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+        },
+        {
+            id:'16',
+            descriprion: 'Тестовый отель16',
+            createdAt: '14.12.2011',
+            author: 'Mr. Yellow',
+            price: '449',
+            tag: '#Italy',
+            like: 'false',
+            who_liked: 'Tom, Billy, Harry, Jon',
+            picture: 'https://images.pexels.com/photos/6181222/pexels-photo-6181222.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+        },
+        {
+            id:'17',
+            descriprion: 'Тестовый отель17',
+            createdAt: '05.11.2000',
+            author: 'Mr. Blue',
+            price: '169',
+            tag: '#Turkey',
+            like: 'false',
+            who_liked: 'Tom, Billy, Harry, Jon',
+            picture: 'https://images.pexels.com/photos/6181222/pexels-photo-6181222.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+        },
+        {
+            id:'18',
+            descriprion: 'Тестовый отель18',
+            createdAt: '11.10.2013',
+            author: 'Mr. Snow',
+            price: '129',
+            tag: '#Italy',
+            like: 'false',
+            who_liked: 'Tom, Billy, Harry, Jon',
+            picture: 'https://images.pexels.com/photos/6181222/pexels-photo-6181222.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+        },
+        {
+            id:'19',
+            descriprion: 'Тестовый отель19',
+            createdAt: '09.05.2019',
+            author: 'Mr. Blue',
+            price: '129',
+            tag: '#Greece',
+            like: 'false',
+            who_liked: 'Tom, Billy, Harry, Jon',
+            picture: 'https://images.pexels.com/photos/6181222/pexels-photo-6181222.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+        },
+        {
+            id:'20',
+            descriprion: 'Тестовый отель20',
+            createdAt: '11.11.2008',
+            author: 'Mr. Snow',
+            price: '189',
+            tag: '#Spain',
+            like: 'true',
+            who_liked: 'Tom, Billy, Harry, Jon',
+            picture: 'https://images.pexels.com/photos/6181222/pexels-photo-6181222.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+        }
+    ]
+    document.querySelector('#sort-date').onclick = getPostsData;
+    document.querySelector('#sort-price').onclick = getPosts;
+    document.querySelector('#sort-author').onclick = getPostsAuthor;
+    document.querySelector('#sort-add').onclick = addPost;
+    document.querySelector('#sort-tags').onclick = addPostTag;
+
+
+    function addPostTag(){
+        for (let i = 0; i < Posts.length; i++){
+            if(Posts[i].tag == '#Spain'){
+                console.log(Posts[i]);
+            }
+        }
+        console.log("\n");
     }
+
+    function addPost(){
+        let check = {
+            id:'11',
+            descriprion: 'Тестовый отель21',
+            createdAt: '21.11.2013',
+            author: 'Mr. Snow',
+            price: '179',
+            tag: '#Spain',
+            like: 'true',
+            picture: 'https://images.pexels.com/photos/6181222/pexels-photo-6181222.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+        };
+        if(validatePost(check)){
+            Posts.push(check);
+        }
+        constructor();
+    }
+
+    function constructor(){
+        const map = new Map(Posts);
+        addAll(map);
+    }
+
+    function addAll(map){
+        let postHelper;
+        for(let i = 0; i < map.size; i++){
+            if(!validatePost(Posts[i])){
+                postHelper.push(Posts[i]);
+            }
+        }
+        clear(map);
+        return postHelper;
+    }
+
+    function clear(map){
+        map.clear();
+        return map;
+    }
+
+    function validatePost(test){
+        if(test.hasOwnProperty('id') && test.hasOwnProperty('descriprion') && test.hasOwnProperty('createdAt') &&
+            test.hasOwnProperty('author') && test.hasOwnProperty('price')){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    function getPosts(){
+        let HelperPosts = Posts;
+        let helper;
+        for(let i = 0; i < Posts.length; i++) {
+            for (let j = i; j < Posts.length; j++) {
+                if(+Posts[i].price > +Posts[j].price){
+                    helper = HelperPosts[i];
+                    HelperPosts[i] = HelperPosts[j];
+                    HelperPosts[j] = helper;
+                }
+            }
+        }
+
+        for (let i = 0; i < HelperPosts.length; i++){
+            console.log(HelperPosts[i]);
+        }
+        console.log("\n");
+    }
+
+    function getPostsAuthor(){
+        for (let i = 0; i < Posts.length; i++){
+            if('Mr. Snow' == Posts[i].author){
+                console.log(Posts[i]);
+            }
+        }
+        console.log("\n");
+    }
+
+    function getPostsData(){
+        let x = 1;
+        let y = 9;
+        let HelperPosts = Posts;
+        let helper;
+        for(let i = 0; i < Posts.length; i++) {
+            for (let j = i; j < Posts.length; j++) {
+                if(+Posts[i].createdAt.substr(6) > +Posts[j].createdAt.substr(6)){
+                    helper = HelperPosts[i];
+                    HelperPosts[i] = HelperPosts[j];
+                    HelperPosts[j] = helper;
+                }
+                else if(+Posts[i].createdAt.substr(6) == +Posts[j].createdAt.substr(6)){
+                    if(+Posts[i].createdAt.substr(3,6) > +Posts[j].createdAt.substr(3,6)){
+                        helper = HelperPosts[i];
+                        HelperPosts[i] = HelperPosts[j];
+                        HelperPosts[j] = helper;
+                    }
+                    else if(+Posts[i].createdAt.substr(0,3) > +Posts[j].createdAt.substr(0,6)){
+                        helper = HelperPosts[i];
+                        HelperPosts[i] = HelperPosts[j];
+                        HelperPosts[j] = helper;
+                    }
+                }
+            }
+        }
+
+        for (let i = x; i < x + y && i < HelperPosts.length; i++){
+            console.log(HelperPosts[i]);
+        }
+        console.log("\n");
+    }
+
+    // let a = [3, 4, 12, 1, 3, 7, 6];
+    // for(let i = 0; i < a.length; i++){
+    //     for(let j = i; j < a.length; j++){
+    //         if(a[i] > a[j]){
+    //             let temp = a[i];
+    //             a[i] = a [j];
+    //             a[j] = temp;
+    //         }
+    //         console.log(a);
+    //     }
+    // }
+
+    // document.querySelector('#sort-price').onclick = getPostsPrice;
+    //
+    // function getPostsPrice(){
+    //     let nav = document.querySelector('#mainDiv');
+    //     for(let i = 0; i < nav.children.length; i++) {
+    //         for (let j = i; j < nav.children.length; j++) {
+    //             if(+Posts[i].price > +Posts[j].price){
+    //                 replaceNode = nav.replaceChild(nav.children[j], nav.children[i]);
+    //                 insertAfter(replaceNode, nav.children[i]);
+    //             }
+    //         }
+    //     }
+    // }
+    //
+    // function insertAfter(elem, refElem){
+    //     return refElem.parentNode.insertBefore(elem, refElem.nextSibling);
+    // }
+
+    // let nav = document.querySelector('#mainDiv');
+    // console.log(nav);
+    // replaceNode = nav.replaceChild(nav.children[1],nav.children[0]);
+    // console.log(replaceNode);
+    // nav.appendChild(replaceNode);
+
+    // document.querySelector('#sort-price').onclick = mySort;
+    //
+    // function mySort(){
+    //     let nav = document.querySelector('#mainDiv');
+    //     for(let i = 0; i < nav.children.length; i++) {
+    //         for (let j = i; j < nav.children.length; j++) {
+    //             if(+nav.children[i].getAttribute('price-sort') > +nav.children[j].getAttribute('price-sort')){
+    //                 replaceNode = nav.replaceChild(nav.children[j], nav.children[i]);
+    //                 insertAfter(replaceNode, nav.children[i]);
+    //             }
+    //         }
+    //     }
+    // }
+    //
+    // function insertAfter(elem, refElem){
+    //     return refElem.parentNode.insertBefore(elem, refElem.nextSibling);
+    // }
 </script>
 </body>
 </html>
