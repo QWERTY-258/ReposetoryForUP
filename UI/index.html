@@ -7,10 +7,6 @@
     <title>Material Design for Bootstrap</title>
     <!-- MDB icon -->
     <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-    <!-- Google Fonts Roboto -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -104,6 +100,12 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" id="sort-add">Add</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="sort-remove">Remove</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="sort-edit">Edit</a>
                 </li>
             </ul>
             <div class="collapse navbar-collapse" id="nextNav">
@@ -820,6 +822,20 @@
     document.querySelector('#sort-add').onclick = addPost;
     document.querySelector('#sort-tags').onclick = addPostTag;
 
+
+    document.querySelector('#sort-remove').onclick = removePost;
+    document.querySelector('#sort-edit').onclick = editPost;
+
+    function editPost(){
+        if(Posts.length > 5){
+            Posts[5].price = '333';
+            Posts[5].createdAt = '11.11.1999';
+        }
+    }
+
+    function removePost(){
+        Posts.splice(3,1);
+    }
 
     function addPostTag(){
         for (let i = 0; i < Posts.length; i++){
